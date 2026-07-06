@@ -9,7 +9,7 @@
 </head>
 
 <body class="font-cairo">
-    <header class="sticky top-0 bg-white py-3.5 px-7 shadow-[0_1px_12px_rgba(0,0,13,.1)]">
+    <header class="sticky top-0 bg-white py-3.5 px-7 shadow-[0_1px_12px_rgba(0,0,13,.1)] z-5000">
         <nav class="max-w-8xl mx-auto flex justify-between items-center">
             <a href="home.html">
                 <img src="images/Logo on the far right (RTL_ first item in flex-row).svg" alt="" class="h-7 md:h-10">
@@ -32,7 +32,7 @@
                         بنا</a></li>
             </ul>
             <div class="flex gap-4"> <a href=""
-                    class=" md:block text-white bg-primary rounded-lg py-2.5 px-4 md:px-8 font-bold">تبرع
+                    class=" md:block text-white bg-primary rounded-lg py-2.5 px-4 md:px-8 xs:px-4 xs:py-1.5 font-bold xs:text-[16px]">تبرع
                     الآن</a>
                 <button class="menu-open md:hidden"><img class="w-6 h-6" src="images/burger-menu-svgrepo-com.svg"
                         alt=""></button>
@@ -41,19 +41,21 @@
 
     </header>
     <div
-        class="bg-black/50 backdrop-blur-[1px] fixed w-full md:hidden duration-200 top-0 opacity-0 invisible mobile-menu">
+        class="bg-black/50 backdrop-blur-[1px] fixed w-full md:hidden duration-500 top-0 opacity-0 invisible mobile-menu z-5000">
         <ul
-            class="w-[70%] duration-500 -translate-x-full h-screen flex flex-col bg-purple-900 text-white py-6 px-7 shadow">
-            <li><a href="" class=" hover:border-b-2 hover:border-whight font-bold p-4 block">الرئيسية</a>
+            class="w-[70%] duration-200 -translate-x-full h-screen flex flex-col bg-purple-200 text-purple-900 py-6 px-7 shadow relative">
+            <button
+                class="close-btn absolute py-1 px-3 text-purple-200 hover:text-purple-700 hover:bg-purple-200 font-bold rounded bg-purple-900 top-2 left-2">x</button>
+            <li><a href="" class=" hover:border-b-2 hover:border-purple-700 font-bold p-4 block">الرئيسية</a>
             </li>
-            <li><a href="" class=" hover:border-b-2 hover:border-whight font-bold p-4 block">من
+            <li><a href="" class=" hover:border-b-2 hover:border-purple-700 font-bold p-4 block">من
                     نحن</a>
             </li>
-            <li><a href="" class=" hover:border-b-2 hover:border-whight font-bold p-4 block">الأيتام</a>
+            <li><a href="" class=" hover:border-b-2 hover:border-purple-700 font-bold p-4 block">الأيتام</a>
             </li>
-            <li><a href="" class=" hover:border-b-2 hover:border-whight font-bold p-4 block">كيفية
+            <li><a href="" class=" hover:border-b-2 hover:border-purple-700 font-bold p-4 block">كيفية
                     العمل</a></li>
-            <li><a href="" class=" hover:border-b-2 hover:border-whight font-bold p-4 block">اتصل
+            <li><a href="" class=" hover:border-b-2 hover:border-purple-700 font-bold p-4 block">اتصل
                     بنا</a></li>
         </ul>
     </div>
@@ -68,17 +70,18 @@
                         <img src=" images/Container (1).svg" alt="" class="inline-block">
                         <h5 class="inline-block">بوابة العطاء الموثوقة</h5>
                     </div>
-                    <h1 class="font-extrabold text-3xl md:text-5xl my-6 text-primary md:leading-14">معاً لنمنحهم <span
-                            class="text-secondary">الأمان</span> والأمل</h1>
+                    <h1 class="font-extrabold text-4xl md:text-5xl xs:text-3xl my-6 text-primary md:leading-14">معاً
+                        لنمنحهم <span class="text-secondary">الأمان</span> والأمل</h1>
                     <p class="text-[18px] mb-6 text-[#424750]">انضم إلينا في رحلة صناعة الأثر. من خلال كفيلي، يمكنك
                         توفير مستقبل مشرق
                         لليتيم وتأمين احتياجاته الأساسية بكل شفافية وحب.</p>
                     <div class="flex gap-4 mt-6 ">
-                        <a href="" class="font-bold text-white bg-secondary py-4.5 px-10 rounded-xl ">ابدأ
+                        <a href=""
+                            class="font-bold text-white bg-secondary md:py-4.5 md:px-10 xs:px-5 xs:py-2 rounded-xl ">ابدأ
                             الكفالة
                             الآن</a>
                         <a href=""
-                            class="font-bold text-primary bg-white border-2 border-[#0D4B8E1A]  py-4.5 px-10 rounded-xl ">تعرف
+                            class="font-bold text-primary bg-white border-2 border-[#0D4B8E1A]  md:py-4.5 md:px-10 xs:px-5 xs:py-2 rounded-xl ">تعرف
                             علينا</a>
                     </div>
                 </div>
@@ -92,11 +95,11 @@
         <section>
 
             <div
-                class="max-w-5xl mx-auto bg-primary grid grid-cols-1 md:grid-cols-3 rounded-3xl my-8 md:my-12 shadow-[0_25px_50px_rgba(0, 0, 0,.1)] relative">
+                class="max-w-5xl mx-auto bg-primary grid grid-cols-1 sm:grid-cols-3 rounded-3xl my-8 md:my-12 shadow-[0_25px_50px_rgba(0, 0, 0,.1)] relative xs:mx-18 xs:my-5">
                 <div class="border border-[#FFFFFF33] w-px h-16 absolute top-12 right-88 lg:block xs:hidden"></div>
                 <div class="border border-[#FFFFFF33] w-px h-16 absolute top-12 left-88 lg:block xs:hidden"></div>
 
-                <div class=" flex flex-col items-center py-5 md:py-10 px-11 md:px-21 relative">
+                <div class=" flex flex-col items-center py-5 md:py-10 px-11 md:px-21 xs:px-8 xs:py-5 relative">
                     <svg width="128" height="88" viewBox="0 0 128 88" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="absolute top-0 right-0">
                         <rect y="-40" width="128" height="128" rx="64" fill="white" fill-opacity="0.05" />
@@ -104,11 +107,11 @@
                     <h1 class="font-extrabold text-white text-[30px] md:text-[40px]">+5000</h1>
                     <p class="text-[14px] text-white">يتيم مكفول</p>
                 </div>
-                <div class=" flex flex-col items-center py-5 md:py-10 px-11 md:px-21">
+                <div class=" flex flex-col items-center py-5 md:py-10 px-11 md:px-21  xs:px-8 xs:py-5">
                     <h1 class="font-extrabold text-white text-[30px] nd:text-[40px]">+M2</h1>
                     <p class="text-[14px] text-white"> تبرعات (دولار)</p>
                 </div>
-                <div class=" flex flex-col items-center py-5 md:py-10 px-11 md:px-21">
+                <div class=" flex flex-col items-center py-5 md:py-10 px-11 md:px-21  xs:px-8 xs:py-5 ">
                     <h1 class="font-extrabold text-white text-[30px] md:text-[40px]">+10</h1>
                     <p class="text-[14px] text-white"> دول حول العالم</p>
                 </div>
@@ -118,7 +121,8 @@
             <div class="max-w-8xl mx-auto py-12 my-12 bg-[#0D4B8E0D] text-center">
                 <div>
                     <h1 class="font-bold text-[24px] text-primary pb-4">لماذا تختار منصة كفيلي؟</h1>
-                    <p class="text-4 text-[#424750]">نحن نؤمن بأن الصدقة أمانة، لذلك صممنا نظامنا ليكون الأكثر شفافية
+                    <p class="text-4 text-[#424750] xs:px-6">نحن نؤمن بأن الصدقة أمانة، لذلك صممنا نظامنا ليكون الأكثر
+                        شفافية
                         وأماناً في العالم العربي.</p>
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-6">
@@ -149,10 +153,12 @@
         </section>
         <section>
             <div class="my-14 lg:my-25 px-6">
-                <h1 class="font-bold text-[24px] text-primary">أيتام ينتظرون كفالتك</h1>
-                <div class="flex justify-between pb-12 pt-2">
-                    <p class="text-4 text-[#424750] ">بضغطة زر واحدة، يمكنك تغيير مسار حياة إنسان بالكامل.</p>
-                    <div class="flex gap-4 items-center">
+                <h1 class="font-bold md:text-[24px] xs:text-[20px] text-primary">أيتام ينتظرون كفالتك</h1>
+                <div class="flex justify-between pb-12 pt-2 xs:flex-col sm:flex-row">
+                    <p class="md:text-[20px] xs:text-[16px] text-[#424750] ">بضغطة زر واحدة، يمكنك تغيير مسار حياة إنسان
+                        بالكامل.
+                    </p>
+                    <div class="flex gap-4 items-center xs:mt-2">
                         <p class="font-bold text-4 text-primary">عرض كافة الحالات</p>
                         <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 12L0 6L6 0L7.4 1.4L2.8 6L7.4 10.6L6 12Z" fill="#0D4B8E" />
@@ -256,20 +262,21 @@
         </section>
         <section class="bg-primary">
             <div class="flex flex-col gap-8 items-center py-12 md:py-24 px-16 md:px-35">
-                <img src="images/Container (2).svg" alt="" class="w-10">
+                <img src="images/Container (2).svg" alt="" class="w-10 xs:w-8">
 
-                <h1 class="text-white text-[30px] md:text-[40px] font-semibold">"أنت لا تقدم فقط مالاً، بل تبني إنساناً
+                <h1 class="text-white md:text-[30px] xs:text-[25px] font-semibold">"أنت لا تقدم فقط مالاً،
+                    بل تبني إنساناً
                     وتعيد
                     له <br>
                     إيمانه بالمستقبل. انضم
                     إلى عائلة كفيلي اليوم."</h1>
 
                 <div class="flex gap-6"> <a href=""
-                        class="text-[15px] md:text-[20px] font-bold text-white bg-[#D9A441] rounded-2xl py-5 px-5 md:px-12 inline-block">انضم
+                        class="xs:text-[16px] md:text-[20px] font-bold text-white bg-[#D9A441] rounded-2xl xs:py-2 xs:px-4 md:px-12 inline-block">انضم
                         إلينا
                         الآن</a>
                     <a href=""
-                        class="text-[15px] md:text-[20px] font-bold text-white backdrop-blur-md rounded-2xl py-5 px-5 md:px-12 border border-[#FFFFFF33] bg-purple-900 inline-block">شاهد
+                        class="xs:text-[16px] md:text-[20px] font-bold text-white backdrop-blur-md rounded-2xl xs:py-2 xs:px-4 md:px-12 border border-[#FFFFFF33] bg-purple-900 inline-block">شاهد
                         قصص النجاح
 
                     </a>
@@ -281,7 +288,7 @@
 
 
     <footer class=" bg-[#f3f4f5] px-6">
-        <div class="grid grid-cols-3 gap-12 py-20">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-12 md:py-20 xs:py-10">
             <div class="text-right">
                 <img src="images/Kafeeli.svg" alt="" class="mb-6">
                 <p class="text-4 text-[#424750]">
@@ -311,7 +318,9 @@
                 </ul>
             </div>
         </div>
-        <h1 class="text-[16px] text-[#424750] py-7 text-center">© 2026 كفيلي - منصة رعاية الأيتام . جميع الحقوق
+        <h1 class="md:text-[16px] xs:text-[14px] text-[#424750] md:py-7 xs:py-4 text-center">© 2026 كفيلي - منصة رعاية
+            الأيتام .
+            جميع الحقوق
             محفوظة
         </h1>
     </footer>
